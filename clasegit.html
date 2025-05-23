@@ -1,56 +1,193 @@
+<!--
+    Este es un archivo HTML que contiene una lista de comandos de Git y sus descripciones.
+    Se utiliza para mostrar cómo usar Git y GitHub en un proyecto.
+    El archivo incluye ejemplos de comandos como git init, git add, git commit, git push, etc.
+    También se incluyen ejemplos de cómo crear ramas, fusionar cambios y trabajar con repositorios remotos.
+    El archivo está diseñado para ser fácil de leer y entender, con un formato claro y conciso.
+    Se utiliza HTML básico y CSS para el estilo.
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>GITHUB</title>
+    
 </head>
 <body>
     <h1>primer modulo- GitHub</h1>
-    <p>instalacion y creacion del mismo, manejo de los comandos para traer el repo a local y hacer un nuevo archivo el cual vamos a subir con un primer 
+    <div class="container">
+        <h2>Comandos de Git</h2>
+        <p>En este módulo aprenderemos a utilizar Git y GitHub para el control de versiones de nuestro proyecto. 
+            Veremos cómo crear un repositorio, hacer commits, push y pull, así como trabajar con ramas y fusionar cambios.</p>
+    </div>
+    <div class="comandos">
+         <p>instalacion y creacion del mismo, manejo de los comandos para traer el repo a local y hacer un nuevo archivo el cual vamos a subir con un primer 
         commit y un push al repo de github, para que quede guardado en la nube y podamos compartirlo con otras personas.
         <br>
-        <br>
-        <strong>Comandos:</strong>
+        <div class=""comandos1>
+ <strong>Comandos:</strong>
         <ul>
-            <li>git init</li>
-            <li>git add .</li>
-            <li>git commit -m "mensaje"</li>
-            <li>git push origin master</li>
-            <li>git pull origin master</li>
-            <li>git clone url</li>
-            <li>git status</li>
-            <li>git log</li>
-            <li>git branch</li>
-            <li>git checkout -b nombre</li> 
-            <li>git checkout nombre</li>
-            <li>git merge nombre</li>
-            <li>git remote add origin url</li>
-            <li>git remote -v</li>
-            <li>git remote rm origin</li>
-            <li>git remote set-url origin url</li>
-            <li>git fetch</li>
-            <li>git stash</li>
-            <li>git stash pop</li>
-            <li>git stash list</li>
-            <li>git stash apply</li>
-            <li>git stash drop</li>
-            <li>git stash clear</li>
-            <li>git cherry-pick hash</li>
-            <li>git rebase</li>
-            <li>git reset</li>
-            <li>git revert</li>
-            <li>git tag</li>
-            <li>git tag -d nombre</li>
-            <li>git push origin nombre</li>
-            <li>git push origin --tags</li>
-            <li>git pull --rebase</li>
-            <li>git pull --rebase origin master</li>
-            <li>git pull --rebase origin nombre</li>
-            <li>git pull --rebase upstream master</li>
-            <li>git pull --rebase upstream nombre</li>
-    
+            <li>
+                <span class="comando">git init</span>
+                <span class="descripcion">Inicializa un nuevo repositorio de Git en el directorio actual.</span>
+            </li>
+            <li>
+                <span class="comando">git add .</span>
+                <span class="descripcion">Agrega todos los archivos del directorio actual al área de preparación para el próximo commit.</span>
+            </li>
+            <li>
+                <span class="comando">git commit -m "mensaje"</span>
+                <span class="descripcion">Crea un nuevo commit con el mensaje especificado.</span>
+            </li>
+            <li>
+                <span class="comando">git push origin master</span>
+                <span class="descripcion">Envía los cambios del repositorio local al repositorio remoto en la rama master.</span>
+            </li>
+            <li>
+                <span class="comando">git pull origin master</span>
+                <span class="descripcion">Obtiene los cambios del repositorio remoto en la rama master y los aplica al repositorio local.</span>
+            </li>
+            <li>
+                <span class="comando">git clone url</span>
+                <span class="descripcion">Clona un repositorio de Git desde la URL especificada.</span>
+            </li>
+            <li>
+                <span class="comando">git status</span>
+                <span class="descripcion">Muestra el estado actual del repositorio, incluyendo los archivos que han sido modificados o agregados.</span>
+            </li>
+            <li>
+                <span class="comando">git log</span>
+                <span class="descripcion">Muestra un registro de todos los commits realizados en el repositorio.</span>
+            </li>
+            <li>
+                <span class="comando">git branch</span>
+                <span class="descripcion">Muestra una lista de todas las ramas del repositorio.</span>
+            </li>
+            <li>
+                <span class="comando">git checkout -b nombre</span>
+                <span class="descripcion">Crea una nueva rama con el nombre especificado y se cambia a ella.</span>
+            </li>
+            <li>
+                <span class="comando">git merge nombre</span>
+                <span class="descripcion">Combina los cambios de la rama especificada con la rama actual.</span>
+            </li>
+        </ul>
+        </div>
+        <br>
+        <div class="comando2">
+            <ul>
+            <li>
+                <span class="comando">git commit -m "agregando el archivo de git"</span>
+                <span class="descripcion">Crea un nuevo commit con el mensaje especificado.</span>
+            </li>
+        </ul>
+        </div>
+        <br>
+        
+        <strong>Ejemplo de un commit:</strong>  
+        
+        <br>
+        <strong>Ejemplo de un push:</strong>
+        <ul>
+            <li>
+                <span class="comando">git push origin master</span>
+                <span class="descripcion">Envía los cambios del repositorio local al repositorio remoto en la rama master.</span>
+            </li>
+        </ul>
+        <br>
+        <strong>Ejemplo de un pull:</strong>
+        <ul>
+            <li>
+                <span class="comando">git pull origin master</span>
+                <span class="descripcion">Obtiene los cambios del repositorio remoto en la rama master y los aplica al repositorio local.</span>
+            </li>
+        </ul>
+        <br>
+        <strong>Ejemplo de un clone:</strong>
+        <ul>
+            <li>
+                <span class="comando">git clone url</span>
+                <span class="descripcion">Clona un repositorio de Git desde la URL especificada.</span>
+            </li>
+        </ul>
+        <br>
+        <strong>Ejemplo de un status:</strong>
+        <ul>
+            <li>
+                <span class="comando">git status</span>
+                <span class="descripcion">Muestra el estado actual del repositorio, incluyendo los archivos que han sido modificados o agregados.</span>
+            </li>
+        </ul>
+        <br>
+        <strong>Ejemplo de un log:</strong>
+        <ul>
+            <li>
+                <span class="comando">git log</span>
+                <span class="descripcion">Muestra un registro de todos los commits realizados en el repositorio.</span>
+            </li>
+        </ul>
+        <br>
+        <strong>Ejemplo de un branch:</strong>
+        <ul>
+            <li>
+                <span class="comando">git branch</span>
+                <span class="descripcion">Muestra una lista de todas las ramas del repositorio.</span>
+            </li>
+        </ul>
+        <br>
+        <strong>Ejemplo de un checkout:</strong>
+        <ul>
+            <li>
+                <span class="comando">git checkout -b nombre</span>
+                <span class="descripcion">Crea una nueva rama con el nombre especificado y se cambia a ella.</span>
+            </li>
+        </ul>
+        <br>
+        <strong>Ejemplo de un merge:</strong>
+        <ul>
+            <li>
+                <span class="comando">git merge nombre</span>
+                <span class="descripcion">Combina los cambios de la rama especificada con la rama actual.</span>
+            </li>
+        </ul>
+        <br>
+        <strong>Ejemplo de un remote:</strong>
+        <ul>
+            <li>
+                <span class="comando">git remote add origin url</span>
+                <span class="descripcion">Agrega un nuevo repositorio remoto con la URL especificada.</span>
+            </li>
+        </ul>
+        <br>
+        <!--como crear una nueva rama?-->
+        <strong>Ejemplo de un fetch:</strong>
+        <ul>
+            <li>
+                <span class="comando">git fetch</span>
+                <span class="descripcion">Obtiene los cambios del repositorio remoto, pero no los aplica al repositorio local.</span>
+            </li>
+        </ul>
+        <br>
+        <strong>Ejemplo de un stash:</strong>
+        <ul>
+            <li>
+                <span class="comando">git stash</span>
+                <span class="descripcion">Guarda los cambios no comprometidos en una pila de cambios temporales.</span>
+            </li>
+        </ul>
+        <br>
+        <strong>Ejemplo de un cherry-pick:</strong>
+        <ul>
+            <li>
+                <span class="comando">git cherry-pick hash</span>
+                <span class="descripcion">Aplica los cambios de un commit específico a la rama actual.</span>
+            </li>
         </ul>
     </p>
+    </div>
+   
 </body>
 </html>
+

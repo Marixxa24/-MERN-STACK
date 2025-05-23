@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleForm.css">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de Registro</h2>
+        <form id="registroForm" action="#" method="post">
+            <!-- Datos de registro -->
+            <div class="form-group">
+                <label for="nombre">Nombre <span class="required">*</span></label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="apellidos">Apellidos <span class="required">*</span></label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Ingresa tus apellidos" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="usuario">Nombre de usuario <span class="required">*</span></label>
+                <input type="text" id="usuario" name="usuario" placeholder="Elige un nombre de usuario" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo Electrónico <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="contrasena">Contraseña <span class="required">*</span></label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Mínimo 8 caracteres" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirmar-contrasena">Confirmar Contraseña <span class="required">*</span></label>
+                <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" placeholder="Repite tu contraseña" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej: 123-456-7890">
+            </div>
+            
+            <div class="form-group">
+                <label for="fecha">Fecha de Nacimiento</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+            
+            <!-- Lista desplegable para país -->
+            <div class="form-group">
+                <label for="pais">País <span class="required">*</span></label>
+                <select id="pais" name="pais" required>
+                    <option value="">Selecciona tu país</option>
+                    <option value="es">España</option>
+                    <option value="mx">México</option>
+                    <option value="ar">Argentina</option>
+                    <option value="co">Colombia</option>
+                    <option value="pe">Perú</option>
+                    <option value="cl">Chile</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            
+            <!-- Género -->
+            <div class="form-group">
+                <label>Género:</label>
+                <div class="radio-group">
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="otro-genero" name="genero" value="otro">
+                    <label for="otro-genero">Prefiero no decirlo</label>
+                </div>
+            </div>
+            
+            <!-- Dirección -->
+            <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Tu dirección">
+            </div>
+            
+            <div class="form-group">
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Tu ciudad">
+            </div>
+            
+            <div class="form-group">
+                <label for="codigo-postal">Código Postal</label>
+                <input type="text" id="codigo-postal" name="codigo-postal" placeholder="Ej: 28001">
+            </div>
+            
+            <!-- Casillas de verificación para intereses -->
+            <div class="form-group">
+                <label>Intereses (opcional):</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+                    <label for="tecnologia">Tecnología</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="deportes" name="intereses" value="deportes">
+                    <label for="deportes">Deportes</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="musica" name="intereses" value="musica">
+                    <label for="musica">Música</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="arte" name="intereses" value="arte">
+                    <label for="arte">Arte y Cultura</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="viajes" name="intereses" value="viajes">
+                    <label for="viajes">Viajes</label>
+                </div>
+            </div>
+            
+            <!-- Términos y condiciones -->
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los <a href="#">términos y condiciones</a> <span class="required">*</span></label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Deseo recibir noticias y ofertas por correo electrónico</label>
+                </div>
+            </div>
+            
+            <!-- Pregunta de seguridad -->
+            <!-- <div class="form-group">
+                <label for="pregunta">Pregunta de seguridad <span class="required">*</span></label>
+                <select id="pregunta" name="pregunta" required>
+                    <option value="">Selecciona una pregunta</option>
+                    <option value="mascota">¿Cuál fue el nombre de tu primera mascota?</option>
+                    <option value="ciudad">¿En qué ciudad naciste?</option>
+                    <option value="escuela">¿Cuál fue el nombre de tu primera escuela?</option>
+                    <option value="madre">¿Cuál es el apellido de soltera de tu madre?</option>
+                </select>
+            </div> -->
+            
+            <div class="form-group">
+                <label for="respuesta">Respuesta <span class="required">*</span></label>
+                <input type="text" id="respuesta" name="respuesta" required>
+            </div>
+            
+            <!-- Botón de envío -->
+            <div class="form-group">
+                <button type="submit">Registrarse</button>
+            </div>
+            
+            <!-- Mensaje de éxito o error -->
+            <div id="mensaje-exito" class="message success">
+                ¡Registro completado con éxito! Te hemos enviado un correo de confirmación.
+            </div>
+            <div id="mensaje-error" class="message error">
+                Ha ocurrido un error. Por favor, verifica los datos e inténtalo de nuevo.
+            </div>
+        </form>
+    </div>
+    
+    <script src="jsForm.js"></script>
+</body>
+</html>
